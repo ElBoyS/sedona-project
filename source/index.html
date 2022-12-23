@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sedona</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Фото и видео</a>
+              </li>
+              <li class="main-nav__item main-nav__item--logo">
+                <img src="./img/navlogo.svg" alt="" />
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">1</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__logo">
+          <img
+            class="page-header__logo-image"
+            src="./img/mainlogo.svg"
+            alt="Sedona image"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <header class="page-main__header">
+        <h1 class="page-main__heading"></h1>
+        <div class="page-main__subheading"></div>
+      </header>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="advantages-benefits">
+          <div class="advantages-benefits__item">
+            <div class="advantages-benefits__heading">Настоящий городок</div>
+            <div class="advantages-benefits__number">— №1 —</div>
+            <div class="advantages-benefits__description">
+              Седона не аттрацион для туристов, там течет своя жизнь
+            </div>
+          </div>
+          <div class="advantages-benefits__image">
+            <img src="./img/content/photo-city@1x.jpg" alt="" />
+          </div>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__icon"></div>
+            <div class="advantages__heading">Жилье</div>
+            <div class="advantages__description">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__icon"></div>
+            <div class="advantages__heading">Еда</div>
+            <div class="advantages__description">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__icon"></div>
+            <div class="advantages__heading">Сувениры</div>
+            <div class="advantages__description">
+              Не только китайсокго, но и местного производства
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="advantages-benefits">
+          <div
+            class="advantages-benefits__item advantages-benefits__item-reverser"
+          >
+            <div class="advantages-benefits__heading">
+              Там есть мост дьявола
+            </div>
+            <div class="advantages-benefits__number">— №2 —</div>
+            <div class="advantages-benefits__description">
+              Да, по нему можно пройти! Если вы осмелитесь, конечно
+            </div>
+          </div>
+          <div class="advantages-benefits__image">
+            <img src="./img/content/photo-bridge@1x.jpg" alt="" />
+          </div>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__heading">Небольшая площадь</div>
+            <div class="advantages__number">— №3 —</div>
+            <div class="advantages__description">
+              Все интересные места находятся очень близко
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__heading">Красивая дорога</div>
+            <div class="advantages__number">— №4 —</div>
+            <div class="advantages__description">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__heading">Мало туристов</div>
+            <div class="advantages__number">— №5 —</div>
+            <div class="advantages__description">
+              Большинство едет в Гранд каньон и толпится там
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <div class="search-hotel">
+      <div class="search-hotel__wrapper">
+        <div class="search-hotel">
+          <div class="search-hotel__slogan">Заинтерисовались?</div>
+          <div class="search-hotel__description">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в седоне
+          </div>
+          <div class="search-hotel__button button">Найти гостиницу</div>
+        </div>
+        <div class="search-hotel__map">
+          <img
+            src="./img/content/map-desktop.png"
+            alt="Штан Аризона, городо Седона, и адрес"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__hashtag hashtag"></div>
+      <a href="#" class="hashtag__link">#visitsedona</a>
+      <div class="main-footer__social social"></div>
+      <ul class="social__list">
+        <li class="social__item-icon">1</li>
+        <li class="social__item-icon">2</li>
+        <li class="social__item-icon">3</li>
+      </ul>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
