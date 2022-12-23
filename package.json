@@ -1,0 +1,36 @@
+{
+  "name": "sedona-project",
+  "version": "1.0.0",
+  "description": "Travel site ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElBoyS/sedona-project.git"
+  },
+  "keywords": [
+    "less",
+    "html",
+    "gulp"
+  ],
+  "author": "Oleksandr Pavlenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElBoyS/sedona-project/issues"
+  },
+  "homepage": "https://github.com/ElBoyS/sedona-project#readme",
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "browser-sync": "2.27.11",
+    "gulp": "4.0.2",
+    "gulp-less": "5.0.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "9.0.1",
+    "postcss": "8.4.20"
+  },
+  "type": "module"
+}
