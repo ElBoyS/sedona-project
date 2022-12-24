@@ -11,7 +11,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([autopefixer()]))
-    .pipe(gulp.dest("./source/css/style.css", { sourcemaps: true }))
+    .pipe(gulp.dest("./source/css", { sourcemaps: true }))
     .pipe(browser.stream());
 };
 
@@ -29,7 +29,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  gulp.watch("source/*.html").on("change", browser.reload());
+  gulp.watch("source/*.html").on("change", browser.reload);
 };
 
 export default gulp.series(styles, server, watcher);
