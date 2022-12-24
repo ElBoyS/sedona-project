@@ -11,7 +11,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([autopefixer()]))
-    .pipe(gulp.dest("./source/css", { sourcemaps: true }))
+    .pipe(gulp.dest("source/css", { sourcemaps: true }))
     .pipe(browser.stream());
 };
 
