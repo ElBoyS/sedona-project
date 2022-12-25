@@ -1,4 +1,5 @@
 .advantages-benefits {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 256px;
@@ -13,6 +14,21 @@
    height: auto;
   }
 }
+
+@media(max-width:@tablet-width){
+  .advantages-benefits--decoration{
+
+    background-image: url('../../img/triangle-adv.svg');
+    background-repeat: no-repeat;
+    background-size:contain ;
+    padding-top:32px ;
+ 
+  }
+  .advantages__list--reasons{
+    padding: 0;
+  }
+}
+
 .advantages-benefits--reversed {
   grid-template-columns: 2fr 1fr;
   @media(max-width:@tablet-width){
@@ -23,12 +39,14 @@
 }
 
 .advantages-benefits__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 47px 52px 65px;
   text-align: center;
+
 }
 .advantages-benefits__item--reversed {
   // grid-column: 2 / 3;
@@ -38,6 +56,8 @@
   color: #ffffff;
   margin-bottom: 12px;
 }
+
+
 
 .advantages-benefits__number {
   margin-bottom: 24px;
