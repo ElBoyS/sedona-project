@@ -1,6 +1,9 @@
+.page-header{
+
+}
+
 .page-header__logo{
-    position: relative;
-    top: 0;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -12,4 +15,36 @@
         width:102px;
         height: 84px;
     }
+    @media(min-width:@tablet-width){
+        top: 0;
+    }
 }
+.page-header__toggle{
+    display: none;
+    top: 17px;
+    right: 20px;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+}
+.page-header__toggle.page-header--closed{
+    display: block;
+}
+.page-header__toggle::before{
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background-color: @strokeblue;
+    box-shadow: 0 5px 0 0 @strokeblue, 0 10px 0 0 @strokeblue;
+}
+
+.page-header__menu-bar{
+    display: none;
+    height: 56px;
+    background-color: white;
+    @media(max-width:@tablet-width){
+        display: block;
+    }
+}
+

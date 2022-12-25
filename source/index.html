@@ -14,22 +14,11 @@
     <div class="page__wrapper">
       <header class="page-header">
         <div class="page-header__wrapper">
-          <a class="page-header__logo">
-            <picture>
-              <source
-                media="(max-width:1200px)"
-                srcset="./img/logotype-tablet.svg"
-              />
-              <img
-                src="./img/navlogo.svg"
-                alt="Логотип сайта СЕДОНА"
-                wisdth="185"
-                height="96"
-              />
-            </picture>
-          </a>
           <nav class="main-nav">
             <div class="main-nav__wrapper">
+              <div class="main-nav__toggle">
+                <span class="visually-hidden">Закрыть меню</span>
+              </div>
               <ul class="main-nav__list">
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Главная</a>
@@ -47,6 +36,25 @@
               </ul>
             </div>
           </nav>
+          <a class="page-header__logo">
+            <picture>
+              <source
+                media="(max-width:1200px)"
+                srcset="./img/logotype-tablet.svg"
+              />
+              <img
+                src="./img/navlogo.svg"
+                alt="Логотип сайта СЕДОНА"
+                wisdth="185"
+                height="96"
+              />
+            </picture>
+          </a>
+          <div class="page-header__menu-bar">
+            <div class="page-header__toggle">
+              <span class="visually-hidden">Открыть меню</span>
+            </div>
+          </div>
           <div class="header-hero">
             <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
             <picture>
@@ -86,7 +94,7 @@
         </header>
         <section class="advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <div class="advantages-benefits">
+          <div class="advantages-benefits advantages-benefits--decoration">
             <div class="advantages-benefits__item">
               <div class="advantages-benefits__heading">
                 Настоящий <br />
@@ -103,22 +111,25 @@
           </div>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <div class="advantages__icon advantages__icon--house"></div>
-              <div class="advantages__heading">Жилье</div>
+              <div class="advantages__heading advantages__heading--house">
+                Жилье
+              </div>
               <div class="advantages__description">
                 Рекомендуем пожить в настоящем мотеле, все как в кино!
               </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__icon advantages__icon--food"></div>
-              <div class="advantages__heading">Еда</div>
+              <div class="advantages__heading advantages__heading--food">
+                Еда
+              </div>
               <div class="advantages__description">
                 Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__icon advantages__icon--souvenir"></div>
-              <div class="advantages__heading">Сувениры</div>
+              <div class="advantages__heading advantages__heading--souvenir">
+                Сувениры
+              </div>
               <div class="advantages__description">
                 Не только китайсокго, но и местного производства
               </div>
@@ -182,10 +193,20 @@
             <a class="search-hotel__button button">Найти гостиницу</a>
           </div>
           <div class="search-hotel__map">
-            <img
-              src="./img/content/map-desktop.png"
-              alt="Штан Аризона, городо Седона, и адрес"
-            />
+            <picture>
+              <source
+                media="(max-width:768px)"
+                srcset="./img/content/mobile-width-map.png"
+              />
+              <source
+                media="(max-width:1200px)"
+                srcset="./img/content/map-tablet.png"
+              />
+              <img
+                src="./img/content/map-desktop.png"
+                alt="Штан Аризона, городо Седона, и адрес"
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -202,7 +223,7 @@
             </ul>
           </div>
           <div class="page-footer__logo">
-            <img src="./img/codesee.svg" width="143" height="44" alt="" />
+            <!-- <img src="./img/codesee.svg" width="143" height="44" alt="" /> -->
           </div>
         </div>
       </footer>

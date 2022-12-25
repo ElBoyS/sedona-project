@@ -8,10 +8,16 @@
     padding-top: 18px;
     padding-bottom: 36px;
     text-align: center;
+    @media(max-width:@tablet-width){
+        flex-direction: column;
+    }
 }
 .page-footer__hashtag{
     margin-left: 104px;
     flex-grow: 1;
+    @media(max-width:@tablet-width){
+        margin: 0;
+    }
 }
 .page-footer__social{
     flex-grow: 1;

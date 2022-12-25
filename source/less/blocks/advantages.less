@@ -4,28 +4,74 @@
     justify-items: center;
     margin: 0;
     background-color: #ffffff;
-    padding: 60px 0 58px;
+    padding: 160px 0 58px;
     list-style: none;
     text-align: center;
+
+    @media(max-width:@tablet-width){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        gap: 15px;
+        padding: 26px 21px 35px 69px;
+        text-align: left;
+    }
 }
 .advantages__list--reasons{
-
+    text-align: center;
     background-color: @articlebg;
 }
 .advantages__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 14px;
     max-width: 320px;
+    
+}
+.advantages__list--reasons .advantages__heading{
+    margin: 24px auto;
 }
 .advantages__heading{
+    position: relative;
     font-size: 21px;
     max-width: 136px;
     font-weight: 700;
     line-height: 26px;
-    margin-bottom: 24px;
+    width: 120px;
+    margin: 24px auto;
+    @media(max-width:@tablet-width){
+        margin: 0;
+    }
+}
+.advantages__heading::before{
+    position: absolute;
+    content: '';
+    width: 75px;
+    height: 75px;
+    color: @strokeblue;
+    background-size: contain;
+    top: -100px;
+    left: 20px;
+    @media(max-width:@tablet-width){
+        width: 39px;
+        height: 36px;
+        left: -45px;
+        top: -10px;
+    }
+}
+.advantages__heading--house::before{
+    background-image: url('../../img/icon/icon-house.svg');
+    background-repeat: no-repeat;
+}
+.advantages__heading--food::before{
+    background-image: url('../../img/icon/icon-burger.svg');
+    background-repeat: no-repeat;
+
+}
+.advantages__heading--souvenir::before{
+    background-image: url('../../img/icon/icon-gift.svg');
+    background-repeat: no-repeat;
+
 }
 .advantages__number{
     margin-bottom: 24px;
@@ -33,24 +79,4 @@
 .advantages__description{
     font-size: 14px;
     max-width: 320px;
-}
-.advantages__icon{
-    width: 75px;
-    height: 75px;
-    margin-bottom: 24px;
-    color: @strokeblue;
-}
-.advantages__icon--house{
-    background-image: url('../../img/icon/icon-house.svg');
-    background-repeat: no-repeat;
-
-}
-.advantages__icon--food{
-    background-image: url('../../img/icon/icon-burger.svg');
-    background-repeat: no-repeat;
-
-}
-.advantages__icon--souvenir{
-    background-image: url('../../img/icon/icon-gift.svg');
-    background-repeat: no-repeat;
 }

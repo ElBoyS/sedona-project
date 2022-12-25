@@ -1,4 +1,6 @@
-
+.main-nav--open .main-nav__list{
+    display: block;
+}
 .main-nav__list{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -6,6 +8,9 @@
     margin: 0;
     list-style: none;
     background-color: #ffffff;
+    @media(max-width:768px){
+        display: none;
+    }
 
 }
 .main-nav__link{
@@ -17,8 +22,39 @@
     font-size: 14px;
     line-height: 26px;
     padding: 15px 10px;
-    // margin: 0 50px;
-    @media(max-width:1200px){
-        margin: 0;
+    &:hover{
+        color: #81B3D2;
     }
+    @media(max-width:768px){
+        margin: 0;
+        width: 100%;
+        background-color: @strokeblue;
+        color: #ffffff;
+        border-top: 1px solid #9AC2DB;
+        border-bottom: 1px solid #678FA8;
+    }
+}
+.main-nav--closed .main-nav__toggle{
+    display: none;
+}
+.main-nav--open .main-nav__toggle{
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    z-index: 2;
+}
+.main-nav__toggle::before,
+.main-nav__toggle::after{
+    position: absolute;
+    content: '';
+    width: 36px;
+    height: 2px;
+    background-color: white;
+}
+.main-nav__toggle::after{
+    transform: rotate(-45deg);
+}
+.main-nav__toggle::before{
+    transform: rotate(45deg);
 }
