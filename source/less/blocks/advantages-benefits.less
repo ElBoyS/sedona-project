@@ -7,9 +7,19 @@
   font-size: 14px;
   line-height: 21px;
   color: white;
+  @media(max-width:@tablet-width){
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   height: auto;
+  }
 }
 .advantages-benefits--reversed {
   grid-template-columns: 2fr 1fr;
+  @media(max-width:@tablet-width){
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+   }
 }
 
 .advantages-benefits__item {
@@ -39,10 +49,13 @@
   // }
   background-image: url("../../img/content/photo-city@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+
 }
 .advantages-benefits__image--reversed {
   grid-column: 1 / 2;
   grid-row: 1/2;
   background-image: url("../../img/content/photo-bridge@1x.jpg");
+  @media(max-width:@tablet-width){
+    grid-row: 2 / 3 ;
+  }
 }
