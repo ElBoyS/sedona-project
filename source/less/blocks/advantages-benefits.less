@@ -49,6 +49,14 @@
   // }
   background-image: url("../../img/content/photo-city@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  @media(max-width:@desktop-width){
+    background-size:auto;
+  }
+  @media(max-width:@tablet-width){
+    background-size: cover;
+  }
 
 }
 .advantages-benefits__image--reversed {

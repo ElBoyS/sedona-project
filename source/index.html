@@ -193,10 +193,20 @@
             <a class="search-hotel__button button">Найти гостиницу</a>
           </div>
           <div class="search-hotel__map">
-            <img
-              src="./img/content/map-desktop.png"
-              alt="Штан Аризона, городо Седона, и адрес"
-            />
+            <picture>
+              <source
+                media="(max-width:768px)"
+                srcset="./img/content/mobile-width-map.png"
+              />
+              <source
+                media="(max-width:1200px)"
+                srcset="./img/content/map-tablet.png"
+              />
+              <img
+                src="./img/content/map-desktop.png"
+                alt="Штан Аризона, городо Седона, и адрес"
+              />
+            </picture>
           </div>
         </div>
       </div>
