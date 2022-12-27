@@ -14,16 +14,30 @@
    height: auto;
   }
 }
-
-@media(max-width:@tablet-width){
-  .advantages-benefits--decoration{
-
-    background-image: url('../../img/triangle-adv.svg');
-    background-repeat: no-repeat;
-    background-size:contain ;
-    padding-top:32px ;
- 
+.advantages-benefits__decoration{
+  display: none;
+  position: absolute;
+  background-image: url('../../img/triangle-adv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 38px;
+  width: 100%;
+  top: -1%;
+  left: 0;
+  @media(min-width:548px){
+    top: -2%;
   }
+  @media(min-width:700px){
+    top: -5%;
+    left: 1%;
+  }
+  @media(max-width:@tablet-width){
+    display: block;
+  }
+
+}
+@media(max-width:@tablet-width){
+
   .advantages__list--reasons{
     padding: 0;
   }
