@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <div class="main-nav__toggle">
+                <span class="visually-hidden">Закрыть меню</span>
+              </div>
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Фото и видео</a>
+                </li>
+                <li class="main-nav__item main-nav__item--logo"></li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Форма отзыва</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a class="page-header__logo">
+            <picture>
+              <source
+                media="(max-width:1200px)"
+                srcset="./img/logotype-tablet.svg"
+              />
+              <img
+                src="./img/navlogo.svg"
+                alt="Логотип сайта СЕДОНА"
+                wisdth="185"
+                height="96"
+              />
+            </picture>
+          </a>
+          <div class="page-header__menu-bar">
+            <div class="page-header__toggle">
+              <span class="visually-hidden">Открыть меню</span>
+            </div>
+          </div>
+          <div class="header-hero header-hero--tiny-page">
+            <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+            <picture>
+              <img
+                class="header-hero__image header-hero__image--form"
+                src="./img/form/text-sedona.svg"
+                alt="Sedona image"
+                width="460"
+                height="80"
+              />
+            </picture>
+            <img
+              class="header-hero__triangle"
+              src="./img/trianglebg.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+      <main class="page-main">
+        <h2 class="visually-hidden">Оставьте свой отзыв</h2>
+        <header class="page-main__header">
+          <p class="page-main__heading">Оставьте свой отзыв</p>
+          <p class="page-main__subheading">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
+          </p>
+        </header>
+        <section class="feedback">
+          <form action="" class="feedback__form form">
+            <div class="form__wrapper">
+              <div class="form__container form__container--impression">
+                <fieldset class="form__fieldset">
+                  <legend class="form__legend form__legend--impression">
+                    Ваше общее впечатление:
+                  </legend>
+                  <label class="form__label">
+                    <input
+                      class="form__selector form__selector--radio visually-hidden"
+                      type="radio"
+                      name="impression"
+                    />
+                    <span
+                      class="form__selector-indicator form__selector-indicator--radio"
+                    ></span>
+                    <div class="form__selector-text">Скорее положительное</div>
+                  </label>
+                  <label class="form__label">
+                    <input
+                      class="form__selector form__selector--radio visually-hidden"
+                      type="radio"
+                      name="impression"
+                    />
+                    <span
+                      class="form__selector-indicator form__selector-indicator--radio"
+                    ></span>
+                    <div class="form__selector-text">Скорее отрицательное</div>
+                  </label>
+                  <label class="form__label">
+                    <input
+                      class="form__selector form__selector--radio visually-hidden"
+                      type="radio"
+                      name="impression"
+                    />
+                    <span
+                      class="form__selector-indicator form__selector-indicator--radio"
+                    ></span>
+                    <div class="form__selector-text">Затрудняюсь ответить</div>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="form__container form__container--fullname">
+                <fieldset class="form__fieldset form__fieldset--fullname">
+                  <legend class="form__legend form__legend--impression">
+                    Представьтесь:
+                  </legend>
+                  <label class="form__label form__label--fulname">
+                    <div class="form-group">
+                      <div class="form-group__text">Имя<sup>*</sup>:</div>
+                      <input
+                        class="form-group__input"
+                        type="text"
+                        name="secondname"
+                        placeholder="Имя"
+                      />
+                    </div>
+                  </label>
+                  <label class="form__label form__label--fulname">
+                    <div class="form-group">
+                      <div class="form-group__text">Фамилия<sup>*</sup>:</div>
+                      <input
+                        class="form-group__input"
+                        type="text"
+                        name="secondname"
+                        placeholder="Фамилия"
+                      />
+                    </div>
+                  </label>
+                  <label class="form__label form__label--fulname">
+                    <div class="form-group">
+                      <div class="form-group__text">Отчество<sup>*</sup>:</div>
+                      <input
+                        class="form-group__input"
+                        type="text"
+                        name="secondname"
+                        placeholder="Отчество"
+                      />
+                    </div>
+                  </label>
+                </fieldset>
+              </div>
+              <div class="form__container form__container--contacts">
+                <fieldset class="form__fieldset form__fieldset--contacts">
+                  <legend
+                    class="form__legend form__legend--contacts form-legend--underline"
+                  >
+                    Контактная информация:
+                  </legend>
+
+                  <div class="form-group form-group--contacts">
+                    <div class="form-group__text">Телефон<sup>*</sup>:</div>
+                    <div class="form-group__icon-group">
+                      <input
+                        class="form-group__input form-group__input--contacts"
+                        type="number"
+                        name="phone-number"
+                        placeholder="Введите телефон"
+                      />
+                      <span
+                        class="form-group__icon form-group__icon--phone"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="form-group form-group--contacts">
+                    <div class="form-group__text">
+                      Электроная почта<sup>*</sup>:
+                    </div>
+                    <div class="form-group__icon-group">
+                      <input
+                        class="form-group__input form-group__input--contacts"
+                        type="email"
+                        name="email"
+                        placeholder="Введите e-mail"
+                      />
+                      <span
+                        class="form-group__icon form-group__icon--email"
+                      ></span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form__container form__container--sights">
+                <fieldset class="form__fieldset form__fieldset--sights">
+                  <legend
+                    class="form__legend form__legend--sights form-legend--underline"
+                  >
+                    Посещенные достопримечательности:
+                  </legend>
+                  <div class="form__fieldset-wrapper">
+                    <label class="form__label">
+                      <input
+                        class="form__selector form__selector--radio visually-hidden"
+                        type="checkbox"
+                        name="Devil-bridge"
+                      />
+                      <span
+                        class="form__selector-indicator form__selector-indicator--checkbox"
+                      ></span>
+                      <div class="form__selector-text">Мост Дьявола</div>
+                    </label>
+                    <label class="form__label">
+                      <input
+                        class="form__selector form__selector--checkbox visually-hidden"
+                        type="checkbox"
+                        name="Mountain-Bell"
+                      />
+                      <span
+                        class="form__selector-indicator form__selector-indicator--checkbox"
+                      ></span>
+                      <div class="form__selector-text">Гора-Колокол</div>
+                    </label>
+                    <label class="form__label">
+                      <input
+                        class="form__selector form__selector--checkbox visually-hidden"
+                        type="checkbox"
+                        name="Slide-park"
+                      />
+                      <span
+                        class="form__selector-indicator form__selector-indicator--checkbox"
+                      ></span>
+                      <div class="form__selector-text">Слайд-парк</div>
+                    </label>
+                    <label class="form__label">
+                      <input
+                        class="form__selector form__selector--checkbox visually-hidden"
+                        type="checkbox"
+                        name="Red-rock"
+                      />
+                      <span
+                        class="form__selector-indicator form__selector-indicator--checkbox"
+                      ></span>
+                      <div class="form__selector-text">Красные скалы</div>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form__container form__container--review">
+                <fieldset class="form__fieldset form__fieldset--review">
+                  <legend
+                    class="form__legend form__legend--review form-legend--underline"
+                  >
+                    Опишите свои эмоции:
+                  </legend>
+                  <textarea
+                    class="form__textarea form__textarea--review"
+                    name="review"
+                    placeholder="Опишите подробно все свои восторги"
+                  ></textarea>
+                </fieldset>
+              </div>
+              <div class="form__button-group">
+                <button class="form__button button">Отправить отзыв</button>
+                <span><sup>*</sup> — Обьязательные поля</span>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__hashtag hashtag">
+            <a href="#" class="hashtag__link">#visitsedona</a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item-icon social__item-icon--twitter"></li>
+              <li class="social__item-icon social__item-icon--facebook"></li>
+              <li class="social__item-icon social__item-icon--youtube"></li>
+            </ul>
+          </div>
+          <div class="page-footer__logo">
+            <!-- <img src="./img/codesee.svg" width="143" height="44" alt="" /> -->
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
