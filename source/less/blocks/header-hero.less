@@ -8,22 +8,17 @@
     text-align: center;
 }
 
-.header-hero__triangle{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-.header-hero__image{
-    margin:  0 auto;
-    width: 460px;
-    height: 350px;
+.header-hero--tiny-page{
+    height: 300px;
+    padding: 0;
+    @media(max-width:@desktop-width){
+        height: 290px;
+    }
     @media(max-width:@tablet-width){
-        width: 282px;
-        height: 214px;
+        height: 156px;
     }
 }
+
 
 .header-hero__image--tiny{
     width: 460px;
@@ -31,5 +26,5 @@
     @media(max-width:@tablet-width){
         width: 282px;
         height: 80px;
-    }
+  }
 }

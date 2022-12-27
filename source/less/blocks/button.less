@@ -3,6 +3,7 @@ a{
     cursor: pointer;
 }
 button{
+ feature/gallery-page
     background-color: inherit;
     border: 0;
 }
@@ -14,5 +15,8 @@ button{
     background-color: @strokeblue;
     &:hover{
         background-color: #669EC0;
+    }
+    @media(max-width:@tablet-width){
+        padding: 16px 32px;
     }
 }
