@@ -1,0 +1,60 @@
+.gallery{
+    background-color: white;
+}
+.gallery__wrapper{
+    @media(max-width:@desktop-width){
+        margin:0 60px
+    }
+}.gallery__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.gallery__item{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    @media(max-width:@tablet-width){
+        margin-top: 20px;
+        padding-top: 20px;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #eeeeee;
+        }
+    }
+}
+.gallery__item--plants{
+    width: 33.333%;
+    @media(max-width:@desktop-width){
+        width: 50%;
+    }
+    @media(max-width:@tablet-width){
+        width: 100%;
+    }
+}
+.gallery__item--forest{
+    width: 33.333%;
+    @media(max-width:@desktop-width){
+        width: 50%;
+    }
+    @media(max-width:@tablet-width){
+        width: 100%;
+    }
+}
+.gallery__item--bridge{
+    width: 33.333%;
+    @media(max-width:@desktop-width){
+        width: 50%;
+    }
+    @media(max-width:@tablet-width){
+        width: 100%;
+    }
+}

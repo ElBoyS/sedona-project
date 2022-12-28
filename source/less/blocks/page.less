@@ -1,5 +1,11 @@
 .page{
     font-family: 'PT Sans, Arial', sans-serif;
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
 }
 .page__body{
     min-width: 320px;
@@ -14,4 +20,9 @@
     @media(max-width:@desktop-width){
         margin: 0;
     }
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
 }

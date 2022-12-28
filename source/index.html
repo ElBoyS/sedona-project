@@ -55,12 +55,20 @@
               <span class="visually-hidden">Открыть меню</span>
             </div>
           </div>
-          <div class="header-hero header-hero--tiny-page">
+          <div class="header-hero">
             <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
             <picture>
+              <source
+                media="(max-width:768px)"
+                srcset="./img/main-hero-mobile.svg"
+              />
+              <source
+                media="(max-width:1200px)"
+                srcset="./img/main-hero-tablet.svg"
+              />
               <img
-                class="header-hero__image header-hero__image--form"
-                src="./img/form/text-sedona.svg"
+                class="header-hero__image"
+                src="./img/mainlogo.svg"
                 alt="Sedona image"
                 width="460"
                 height="80"
@@ -86,7 +94,8 @@
         </header>
         <section class="advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <div class="advantages-benefits advantages-benefits--decoration">
+          <div class="advantages-benefits">
+            <div class="advantages-benefits__decoration"></div>
             <div class="advantages-benefits__item">
               <div class="advantages-benefits__heading">
                 Настоящий <br />
